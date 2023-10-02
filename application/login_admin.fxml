@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="328.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <center>
+      <AnchorPane prefHeight="346.0" prefWidth="375.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="-10.0" prefHeight="70.0" prefWidth="375.0" text="Admin Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Line endX="69.19998168945312" endY="-6.599994659423828" layoutX="274.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" startX="-236.40000915527344" startY="-6.599994659423828" />
+            <TextField fx:id="adminName" layoutX="37.0" layoutY="100.0" prefHeight="34.0" prefWidth="307.0" promptText="Enter Username / Email">
+               <padding>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="38.0" layoutY="67.0" prefHeight="18.0" prefWidth="110.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="148.0" prefHeight="18.0" prefWidth="110.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="adminPass" layoutX="39.0" layoutY="183.0" prefHeight="34.0" prefWidth="307.0" promptText="Enter your Password">
+               <padding>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="adminLogin" layoutX="149.0" layoutY="272.0" mnemonicParsing="false" onAction="#isThisAdmin" prefHeight="28.0" prefWidth="82.0" text="Login" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="7.0" left="15.0" right="15.0" top="7.0" />
+               </padding>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="forgetPass" layoutX="41.0" layoutY="226.0" onAction="#getToForgetPass" text="Forget Password ?" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

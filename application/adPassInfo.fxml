@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="30.0" prefHeight="27.0" prefWidth="345.0" text="Enter Train Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adPassNumber" alignment="CENTER" layoutX="51.0" layoutY="74.0" prefHeight="26.0" prefWidth="249.0" promptText="Enter train number">
+               <padding>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="adPassSubmit" layoutX="136.0" layoutY="134.0" mnemonicParsing="false" onAction="#checkPassInfo" prefHeight="32.0" prefWidth="78.0" text="Submit" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

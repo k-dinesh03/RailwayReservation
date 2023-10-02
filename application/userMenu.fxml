@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane prefHeight="294.0" prefWidth="432.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bookedTicketBtn" layoutX="249.0" layoutY="47.0" mnemonicParsing="false" onAction="#bookedTicketMenu" prefHeight="60.0" prefWidth="170.0" text="Booked Ticket Details" />
+            <Button fx:id="availTicketsBtn" layoutX="249.0" layoutY="163.0" mnemonicParsing="false" onAction="#checkTicketMenu" prefHeight="60.0" prefWidth="170.0" text="Check Available Tickets" />
+            <Button fx:id="cancelTicketBtn" layoutX="35.0" layoutY="163.0" mnemonicParsing="false" onAction="#cancelTicketMenu" prefHeight="60.0" prefWidth="170.0" text="Cancel Ticket" />
+          <Button fx:id="bookTicketbtn" layoutX="35.0" layoutY="47.0" mnemonicParsing="false" onAction="#bookTicketMenu" prefHeight="60.0" prefWidth="170.0" text="Book Ticket" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

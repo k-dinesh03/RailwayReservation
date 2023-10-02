@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="582.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="342.0" prefWidth="206.0" style="-fx-background-color: cornflowerblue;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="userBtn" mnemonicParsing="false" onAction="#loginUser" prefHeight="66.0" prefWidth="176.0" text="Login as User">
+                     <VBox.margin>
+                        <Insets bottom="42.0" left="30.0" right="30.0" top="42.0" />
+                        
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="adminBtn" alignment="CENTER" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="66.0" prefWidth="176.0" text="Login as Admin">
+                     <VBox.margin>
+                        <Insets bottom="42.0" left="30.0" right="30.0" top="42.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Label alignment="CENTER" opacity="0.87" prefHeight="342.0" prefWidth="362.0" text="WELCOME TO ONLINE RAILWAY RESERVATION SYSTEM" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="adPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <VBox alignment="CENTER" prefHeight="436.0" prefWidth="205.0" style="-fx-background-color: cornflowerblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="makeAdmin" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#makeAdmin" prefHeight="59.0" prefWidth="136.0" text="Make an Admin">
+               <VBox.margin>
+                  <Insets bottom="11.0" left="5.0" right="5.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="adForgotPass" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#adForgotPass" prefHeight="59.0" prefWidth="136.0" text="Forgot Password ?">
+               <VBox.margin>
+                  <Insets bottom="11.0" left="5.0" right="5.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="editTrain" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#editTrain" prefHeight="59.0" prefWidth="136.0" text="Edit Train Info">
+               <VBox.margin>
+                  <Insets bottom="11.0" left="5.0" right="5.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="passengerInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#passengerInfo" prefHeight="59.0" prefWidth="136.0" text="Passenger's Info">
+               <VBox.margin>
+                  <Insets bottom="11.0" left="5.0" right="5.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bookedTickets" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#bookedTickets" prefHeight="59.0" prefWidth="136.0" text="Booked Tickets">
+               <VBox.margin>
+                  <Insets bottom="11.0" left="5.0" right="5.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
