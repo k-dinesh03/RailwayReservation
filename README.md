@@ -28,3 +28,4 @@ The Online Railway Ticket Reservation System is a Java-based application develop
 - View and manage your bookings from the booked ticket menu.
 
 ## Git clone
+https://github.com/k-dinesh03/RailwayReservation.git
